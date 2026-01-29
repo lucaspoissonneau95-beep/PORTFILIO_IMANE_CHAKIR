@@ -1,0 +1,95 @@
+/* RÉGLAGES GÉNÉRAUX */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Police simple */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* CONTAINER : Pour centrer le contenu */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVIGATION : Style du menu blanc */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo span { color: #007bff; } /* Le point bleu */
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: #333; font-weight: bold; }
+
+/* HEADER : Zone d'accueil */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #f4f7f6;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+/* BOUTON BLEU */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+.section { padding: 60px 0; }
+.bg-light { background: #f9f9f9; }
+.title { text-align: center; margin-bottom: 40px; }
+
+/* GRILLE PROJETS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* BLOCS CARDS */
+.card, .card-large {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* SKILLS : Bulles bleues */
+.skills-flex { display: flex; justify-content: center; gap: 10px; }
+.skill-tag {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* PIED DE PAGE */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #f4f7f6;
+    font-size: 0.9rem;
+}
